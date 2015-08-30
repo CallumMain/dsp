@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> Emacs, I already write all of my Python code in Emacs.
+>> Emacs, I already write some of my Python code in Emacs.
 
 ---
 
@@ -61,6 +61,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Sublime, it seems like the most straight forward editor, I used Emacs before but setting it to be more of a Python IDE seemed too difficult.  Sublime has split editing to allow two files to be open in the same windows or even two sections of the same file can be viewed at once.  There is also multiple selections to allow you to change multuple things at once.  ⇧⌘L splits the selection into lines and then ⌘D selects the next occurrence of the word.  I installed the Anaconda package which adds IDE features for Python to Sublime including things like auto-complete and code linting.
 
 ---
