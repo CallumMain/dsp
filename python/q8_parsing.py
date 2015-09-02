@@ -8,10 +8,20 @@
 import csv
 
   def read_data(data):
-   # COMPLETE THIS FUNCTION
+	with open(data, 'rb') as csvfile:
+		reader = csv.reader(csvfile, delimiter=',')
+		parsed_data = list(reader)
+	return parsed_data
 
-  def get_min_score_difference(self, parsed_data):
-    # COMPLETE THIS FUNCTION
+def get_min_score_difference(self, parsed_data):
+	current_min = 100
+	for team in parsed_data:
+		diff = team[6] - team[7]
+		if diff < current_min:
+			current_min = diff
 
-  def get_team(self, index_value, parsed_data):
-    # COMPLETE THIS FUNCTION
+	return current_min   
+
+def get_team(self, index_value, parsed_data):
+    team = parsed_data[index_value][0]
+    return team
