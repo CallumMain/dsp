@@ -23,11 +23,15 @@ How are Python lists and sets similar and different? Give examples of using both
 The main difference between lists and sets is that lists can have duplicates and sets cannot.  Sets also require items to be hashable and does not preserve order like lists do.
 
 > l = [1,2,3,4]
+
 > l.append(5)
+
 [1,2,3,4,5]
 
 >s = set("Metis")
+
 >'t' in s
+
 True
 
 Sets are faster for determining whether or not they contain an element but slower for iterating over, this is because they are implemented hash tables which have constant time for look up in the average case.  Lists are slightly faster for iterating.
@@ -48,6 +52,8 @@ We can instead write:
 We can also use it as an argument in fuctions that expect a function such as sorted()'s key argument:
 > sorted([[3, 4], [3, 5], [1, 2], [7, 3]], key=lambda x: x[1])
 
+[[1, 2], [7, 3], [3, 4], [3, 5]]
+
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
@@ -64,9 +70,11 @@ List comprehension is the 'pythonic' way to create lists as its more concise and
 
 Comprehension can also be done for other data structures such as sets and dictionaries.  For example:
 >{x for x in 'abracadabra' if x not in 'abc'}
+
 set(['r','d'])
 
 >{x: x**2 for x in (2, 4, 6)}
+
 {2: 4, 4: 16, 6: 36}
 ---
 
