@@ -21,17 +21,22 @@ Use regular expressions to:
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> REPLACE THIS WITH YOUR RESPONSE
+There are four different titles:
+['Assistant Professor of Biostatistics', 'Professor of Biostatistics', 'Assistant Professor is Biostatistics', 'Associate Professor of Biostatistics'] 
+
+Their frequencies are respectively:
+[11, 13, 1, 12]
 
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
 
->> REPLACE THIS WITH YOUR RESPONSE
+['bellamys@mail.med.upenn.edu', 'warren@upenn.edu', 'bryanma@upenn.edu', 'jinboche@upenn.edu', 'sellenbe@upenn.edu', 'jellenbe@mail.med.upenn.edu', 'ruifeng@upenn.edu', 'bcfrench@mail.med.upenn.edu', 'pgimotty@upenn.edu', 'wguo@mail.med.upenn.edu', 'hsu9@mail.med.upenn.edu', 'rhubb@mail.med.upenn.edu', 'whwang@mail.med.upenn.edu', 'mjoffe@mail.med.upenn.edu', 'jrlandis@mail.med.upenn.edu', 'liy3@email.chop.edu', 'mingyao@mail.med.upenn.edu', 'hongzhe@upenn.edu', 'rlocalio@upenn.edu', 'nanditam@mail.med.upenn.edu', 'knashawn@mail.med.upenn.edu', 'propert@mail.med.upenn.edu', 'mputt@mail.med.upenn.edu', 'sratclif@upenn.edu', 'michross@upenn.edu', 'jaroy@mail.med.upenn.edu', 'msammel@cceb.med.upenn.edu', 'shawp@upenn.edu', 'rshi@mail.med.upenn.edu', 'hshou@mail.med.upenn.edu', 'jshults@mail.med.upenn.edu', 'alisaste@mail.med.upenn.edu', 'atroxel@mail.med.upenn.edu', 'rxiao@mail.med.upenn.edu', 'sxie@mail.med.upenn.edu', 'dxie@upenn.edu', 'weiyang@mail.med.upenn.edu']
 
 
 ####Q4. Find how many different email domains there are (Ex:  mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.).  Print the list of unique email domains.
 
->> REPLACE THIS WITH YOUR RESPONSE
+There are 4 different domains:
+['@upenn.edu', '@email.chop.edu', '@cceb.med.upenn.edu', '@mail.med.upenn.edu']
 
 Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)
 
@@ -69,7 +74,9 @@ faculty_dict = { 'Ellenberg': [\
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+('Putt', [' PhD ScD', 'Professor of Biostatistics', 'mputt@mail.med.upenn.edu'])
+('Feng', [' Ph.D', 'Assistant Professor of Biostatistics', 'ruifeng@upenn.edu'])
+('Bilker', ['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu'])
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -84,11 +91,15 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+(('Yimei', 'Li'), [' Ph.D.', 'Assistant Professor of Biostatistics', 'liy3@email.chop.edu'])
+(('Hongzhe', 'Li'), [' Ph.D', 'Professor of Biostatistics', 'hongzhe@upenn.edu'])
+(('Justine', 'Shults'), [' Ph.D.', 'Professor of Biostatistics', 'jshults@mail.med.upenn.edu'])
 
 ####Q8.  It looks like the current dictionary is sorted by first name.  Sort by last name and print the first 3 key and value pairs.  
 
->> REPLACE THIS WITH YOUR RESPONSE
+(('Joffe', 'Marshall'), [' MD MPH Ph.D', 'Professor of Biostatistics', 'mjoffe@mail.med.upenn.edu'])
+(('Propert', 'Kathleen'), [' Sc.D.', 'Professor of Biostatistics', 'propert@mail.med.upenn.edu'])
+(('Landis', 'J.'), [' B.S.Ed. M.S. Ph.D.', 'Professor of Biostatistics', 'jrlandis@mail.med.upenn.edu'])
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
