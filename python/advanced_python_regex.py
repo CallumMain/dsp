@@ -1,5 +1,19 @@
 import re, csv
 
+def degrees(data):
+	d = []
+	for line in data:
+		degree = line[1].split()
+		for dg in degree:
+			l = re.sub(r'\.', '', dg)
+			d.append(l)
+
+	d.sort()
+	dt = {x:d.count(x) for x in d}
+	a,b = dt.keys(), dt.values()
+
+	print a,b
+
 def titles(data):
 	TITLE_REGEX = re.compile(r"\Professor\b")
 	title = []
