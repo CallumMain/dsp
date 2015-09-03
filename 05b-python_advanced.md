@@ -16,7 +16,11 @@ Use regular expressions to:
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> REPLACE THIS WITH YOUR RESPONSE
+There are 9 different degrees they are:
+['MD', 'MA', 'ScD', 'BSEd', 'PhD', '0', 'MPH', 'MS', 'JD']
+
+Their frequencies are:
+[1, 1, 6, 2, 31, 1, 1, 2, 1]
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
