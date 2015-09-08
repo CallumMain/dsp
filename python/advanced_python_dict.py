@@ -9,7 +9,9 @@ def nameDict(data):
 		else:
 			d[name] = dt[1:]
 
-	return d
+	for key in sorted(d):
+  		item = d.popitem()
+  		print item
 
 def tupleDict(data):
 	d = {}
@@ -21,25 +23,26 @@ def tupleDict(data):
 		else:
 			d[t] = dt[1:]
 
-	return d
+	for key in sorted(d):
+  		item = d.popitem()
+  		print item
 
 def lastDict(data):
 	d = {}
 	for dt in data:
 		name = dt[0].split()
-		t = tuple([name[-1], name[0]])
+		t = tuple([name[0], name[-1]])
 		if t in d:
 			d.get(t).append(dt[1:])
 		else:
 			d[t] = dt[1:]
-
-	return d
+	sorted_items = sorted(d.items(), key=lambda (k, v): (k[1], k[0]))
+	print sorted_items[:3]
 
 with open('faculty.csv', 'rb') as csvfile:
 		reader = csv.reader(csvfile, delimiter=',')
 		parsed_data = list(reader)
 
-d = lastDict(parsed_data)
-for key in sorted(d):
-  item = d.popitem()
-  print item
+nameDict(parsed_data)
+tupleDict(parsed_data)
+lastDict(parsed_data)
