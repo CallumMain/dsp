@@ -57,7 +57,9 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ###Q8. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+The essential difference between frequentist and Bayesian inference comes down to interpretation of probability.  In frequentist probability, probability is defined as the limit of the frequency of an event over a large number of trials.  In bayesian probability, probabilities are assigned to a hypothesis and represent a state of knowledge or state of belief.
+
+Additionally there are two other differences, the first is that in frequentist inference, unknown parameters are generally treated as fixed and cannot have probabilities associated with them, whereas Bayesian inferances allow probability distributions to be associated with unkown parameters.  The second difference is what probabilities tell us in each regime, in the Bayesian regime we have a probability distribution for what is known about the parameters for a given study.  In the frequentist regime we get a true or false answer for a significance test or a confidence interval which covers the true value and the probability that these results are correct.
 
 ---
 
