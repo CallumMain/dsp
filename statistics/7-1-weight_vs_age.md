@@ -2,7 +2,11 @@
 
 In this exercise we are looking at the relationships between variables and in particular looking at the correlation between variables and what that means.  To start I made a scatter plot of age vs birth weight:
 
+![Scatter](/img/Q5Fig2.png)
+
 Then to get a better idea of what is going on in the data I binned the data and plotted the percentiles.  In this plot we can see that weight tends to increase more rapidly between 15 and 25 and then starts to taper off after about 30.
+
+![Percentile](/img/Q5Fig1.png)
 
 Finally I calculated the Pearson's product-moment correlation coefficient or Pearson's r using the following function:
 
