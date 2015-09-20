@@ -52,6 +52,8 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 We start by assigning variables to the information that we know, B (twin brothers), I (identical twins), F (fraternal twins).  We know then that `P(B|F) = 1/4` as there one out of 4 combinations that can result in fraternal twin brothers.  We also know that `P(B|I) = 1/2` as identical twins have to both be female or both be male.  Along with the given priors for fraternal and identical twins we have all of the information we need to apply Bayes' Theorem:
 
+![Bayes](/img/bayeseq.png)
+
 Plugging in our probabilities we find that `P(I|B) = 5/11`
 
 ---
